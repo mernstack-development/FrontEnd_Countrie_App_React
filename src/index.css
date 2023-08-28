@@ -58,6 +58,10 @@ body{
     color: var(--text-color);
 }
 
+body.light-theme{
+    background-color: var(--light-mode-background) ;
+}
+
 
 /* Header */
 .header {
@@ -67,6 +71,11 @@ body{
     color: var(--text-color);
     background-color: hsl(209, 23%, 22%);
     padding: 10px 20px;
+}
+
+i {
+    cursor: pointer;
+    font-size: 25px;
 }
 
 /* FIlter */

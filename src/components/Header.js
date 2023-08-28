@@ -1,6 +1,13 @@
 import React from 'react'
 
 const Header = () => {
+  const moon = document.querySelector('.fa-moon')
+
+  moon.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme')
+  })
+
+
   return (
     <>
         <header className='header'>
