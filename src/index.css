@@ -41,12 +41,13 @@ img{
 .btn:hover {
     background-color: #fff;
     color: var(--dark-bg-color);
-  }
+}
   
 .btn-light {
     background-color: var(--article-color);
     border: 2px solid var(--article-color);
-  }
+}
+
 .fas{
     margin-right: 5px;
 }
@@ -57,11 +58,6 @@ body{
     background-color: var(--dark-bg-color);
     color: var(--text-color);
 }
-
-body.light-theme{
-    background-color: var(--light-mode-background) ;
-}
-
 
 /* Header */
 .header {
@@ -78,49 +74,33 @@ i {
     font-size: 25px;
 }
 
-/* FIlter */
-.filter{
+/* Form component */
+.form {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
-    flex-direction: column;
-}
-
-.filter .form-control{
-    width: 100%;
-}
-
-.filter .form-control input{
-    background-color: #2b3743;
-    border: none;
-    outline: none;
+    justify-content: space-between;
+    padding: 40px 50px;
+  }
+  
+  .form input,
+  .form select {
+    background-color: var(--article-color);
     padding: 12px;
-    border-radius: 5px;
-    color: #fff;
     font-family: inherit;
-    letter-spacing: 0.5px;
-    width: 100%;
-    margin: 0 0 30px;;
-}
-
-.filter .form-control input::placeholder{
-    color: #fff;
-}
-
-.filter .region-filter{
-    width:100%;
-}
-
-.filter .region-filter .SelectRegion {
-    background-color: #2b3743;
-    color: #fff;
-    font-family: inherit;
-    padding: 12px;
-    width:200px;
     border: none;
     border-radius: 5px;
-
-}
+    color: var(--text-color);
+  }
+  
+  .form input::placeholder {
+    color: var(--text-color);
+  }
+  
+  .form input.light-theme,
+  .form select.light-theme {
+    background-color: var(--light-mode-input);
+  }
 
 /* grid */
 .grid{
@@ -223,3 +203,4 @@ i {
         width: 500px;
     }
 }
+

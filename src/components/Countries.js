@@ -37,7 +37,9 @@ const Countries = () => {
                         <div>
                             <img src={flags.png} alt={name}></img>
                             <div className='details'>
-                                <h3>{name}</h3>
+                                <h4 className='country-name'>
+                                    Name: <span>{name}</span>
+                                </h4>
                                 <h4>
                                     population: <span>{population}</span>
                                 </h4>
