@@ -1,34 +1,18 @@
-import React from 'react'
-import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
-import Countries from './components/Countries'
-import Header from './components/Header'
-import Filter from './components/Filter'
-import Country from './components/Country'
+import Countries from "./components/Countries";
+import SingleCoutry from "./components/SingleCoutry";
+
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+
 
 function App() {
   return (
-    <Router>
-      <Header />
-        <Routes>
-          <Route exact path="/" element={<Filter/>} />
-        </Routes>
-        
-        <Routes>
-          <Route exact path="/" element={<Countries/>} />
-        </Routes>
-
-        <Routes>
-          <Route path="/countries/:name" element={<Country/>} />
-        </Routes>
-    </Router>
-  
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Countries />}></Route>
+        <Route path="/:ccn3" element={<SingleCoutry />}></Route>
+      </Routes>
+    </BrowserRouter>
   )
-   
-    
 }
 
 export default App;
-
-
-// Video Link: https://www.youtube.com/watch?v=c9Er4oqgPMM&t=0s
-//Time: 55:26
